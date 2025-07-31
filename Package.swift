@@ -21,15 +21,23 @@ let package = Package(
   platforms: [.iOS(.v12)],
   products: [
     .library(
-      name: "Adapter",
-      targets: ["Adapter"]
+      name: "AppLovinAdapterTarget",
+      targets: ["AppLovinAdapterTarget"]
     )
   ],
+  dependencies: [
+      .package(
+          name: "AppLovinSDK",
+          url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git",
+          from: "13.3.1"
+      )
+    ],
   targets: [
     .target(
       name: "AppLovinAdapterTarget",
       dependencies: [
-        .target(name: "Adapter")
+        .target(name: "Adapter"),
+        .product(name: "AppLovinSDK", package: "AppLovinSDK")
       ],
       path: "AppLovinAdapterTarget"
     ),
