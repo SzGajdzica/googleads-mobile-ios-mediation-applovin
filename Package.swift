@@ -29,7 +29,7 @@ let package = Package(
       .package(
           name: "AppLovinSDK",
           url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git",
-          exact: "13.4.0"
+          .exact("13.4.0")
       )
     ],
   targets: [
