@@ -45,7 +45,7 @@ let package = Package(
       name: "MAppLovinAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/applovin/AppLovinAdapter-13.4.0.0.zip",
-      checksum: "df18b69ad0d893cc64c5ca145c26d551621102311b849a30471b8e6855cdc6f0"
+      checksum: "39120e83712796ae34eef9eb730ac1d3d8efa92431ba2aa3146e2ee84e84cc11"
     ),
   ]
 )
